@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outFile": "index.js",
+    "rootDir": "src/scripts",
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": false
+  },
+  "exclude": [
+    "node_modules",
+    "index.js"
+  ],
+  "files": [
+    "src/scripts/commentsContainer.ts",
+    "src/scripts/user.ts",
+    "src/scripts/commentsSection.ts",
+    "src/scripts/dropdownComponent.ts",
+    "src/scripts/createCommentComponent.ts",
+    "src/scripts/index.ts",
+  ]
+}

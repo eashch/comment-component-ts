@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comment widget</title>    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/comment-section.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/create-component.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/comment.css" />
+    </head>
+    <body class="body">
+        <main class="main">
+            <div class="container-page">
+                <section class="section-small-fillers">
+                    <div class="filler-small"></div>
+                    <div class="filler-small"></div>
+                    <div class="filler-small hide-for-mobile"></div>
+                    <div class="filler-small hide-for-mobile"></div>
+                    <div class="filler-small hide-for-mobile"></div>
+                    <div class="filler-small hide-for-mobile"></div>
+                </section>
+                <div class="filler-big"></div>
+                <section class="comments">
+                    <div class="comments__line"></div>
+                    <nav class="comments__nav">
+                        <ul class="comments__nav-ul">
+                            <li class="comments__title">Комментарии <span class="comments__title comments__number">(0)</span></li>
+                            <li class="comments__option comments__dropdown">
+                                <a class="text-middle comments__dropdown-active-item"></a>
+                                <button class="button-img comments__sort-direction">
+                                    <img src="src/images/comments__arrow-down.svg" class="comments__option-arrow-down" alt="arrow down" width="18" height="15">
+                                </button>
+                                <div class="comments__dropdown-options"></div>
+                            </li>
+                            <li class="comments__option">
+                                
+                                <button class="button-img comments__show-liked">
+                                    <a class="text-middle">Избранное</a>
+                                    <img src="src/images/comments__liked-comments.svg" class="comments__liked" alt="heart in circle" width="21" height="21">
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="comments__line-title"></div>
+                    <div class="create-comment__container">
+                        <img class="create-comment__avatar comments__avatar"></img>
+                        <div class="create-comment__input-block">
+                            <div class="create-comment__header">
+                                <p class="create-comment__user-name comments__text-nickname"></p>
+                                <span class="text-tip create-comment__symbols-count"></span>
+                            </div>
+                            <textarea class="create-comment__input" placeholder="Введите текст"></textarea>
+                        </div>
+                        <div class="create-comment__submit-block">
+                            <span class="text-small text-error create-comment__error"></span>
+                            <button class="create-comment__submit">Отправить</button>
+                        </div>
+                    </div>
+                    <div class="comments__container">
+
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
